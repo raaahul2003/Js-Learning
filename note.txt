@@ -1,0 +1,114 @@
+JAVASCRIPIT
+-----------
+
+-js is a high-level programming language used to make webpage dynamic
+-node.js : provide js runtime environment + js libraries
+-basic concepts in js
+    -console.log(""): Used to display content
+    -data types: 
+        >primitive datatype (simple values):
+         Number     - any number eg:256, 4.23,785.8754
+         String     - text or word in ""
+         Boolean    - trur or false
+         Undefined  - a variable with no value yet eg: let x // x is not defined
+         null       - mean no values but may later assign
+         bigint     - used to very large numbers
+         symbol     - a unique and immutable value, every symbol is different, even if it has same description
+
+
+
+        >non primitive (complex values):
+         Array      - list of values
+         Object     - collection of data {{key:value} pair}
+
+    -Identifier:  a unique name created by the programmer to define variable , class , functions etc.
+        >rules of creating Identifier:
+          - can have letters(uppercase,lowercase),digits and underscore
+          - the first letter should be either letter or underscore 
+          - cannot use keywords as Identifier
+
+    -Keywords: reserved words , eg: if , for , let . var etc 
+
+    -hositing: Hoisiting is a javascripit bahaviour where variables and function deceleration re move  to the top of their scope of during the compilation phase
+
+    -scope: scope refers to where a variable can be accessed in code 
+        >Global Scope: a variable declared outside any function or block is in the global scope. it can accesed from anywhere in the program.
+        >Function Scope: variable declared inside the function are only accesed within the function.
+        >Block Scope: Variables declared inside a block {{}} are only acccesed within the function
+
+    -Variables: used to hold data temporary 
+        - variables creation in js
+        > Using var keyword
+            synatax:
+            var variable_name
+            variable_name = value  
+
+        >using let Keywords
+            syntax:
+            let variable_name
+            variable_name = values
+        >using const keyword  
+            syntax:
+            const variable_name = value
+
+
+
+    Feature                        var                                 let                            const
+    ------------------------------------------------------------------------------------------------------------------------
+    Scope                      -   Function                            Block                          Block
+    can be re-declared         -   YES                                 YES                            No
+    can be re-initialised      -   YES                                 YES (with no values)           YES (with no values)
+    Hoisted                    -   YES(initialised as undefined)       YES                            No
+
+
+        Joining different types of data in js
+            - using comma ,
+            - using concantination operator +
+            - using template literal ``
+
+        Operators in js
+            - Assignment operator (=) used to assign values
+            - Arithmetic Operators
+                - + Addition
+                - - Subtraction
+                - * Multiplication
+                - / Division
+                - % Modulus(reminder)
+                - ** Exponentiation
+
+            -Relational operator
+                - < lessthan
+                - <= lessthan or equal 
+                - > greater than
+                - >= greater than or equal
+                - != not equal
+                - == check the value returns true or false
+                - === check the value and the type and returns true or false
+
+            -Logical Operators
+                - && AND
+                - || OR
+                - ! (NOT)
+            
+            -Unary Operators - works with a single operand
+                -increment ++
+                -decrement --
+
+            -Shorthand Operators
+                - +=
+                - -=
+                - /=
+                - *=
+                - %=
+
+             -Conditional Statements
+                - if
+                    syntax:
+                    if(condition){
+                        Statements
+                    }
+                - if-else
+                - else-if ladder
+                - switch
+
+
