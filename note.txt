@@ -111,4 +111,13 @@ JAVASCRIPIT
                 - else-if ladder
                 - switch
 
+    Truthy Operator &&
+     eg: num>10 && console.log(`$(num) greater than 10`)
 
+    Ternary Operator 
+    synatax
+    Condition ? Statement1 : elseStatement
+    eg:
+        age>=18?console.log("Elgible for Voting"):console.log("Not Eligible for Voting");
+
+    loop:

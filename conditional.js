@@ -1,3 +1,4 @@
+/*
 //if condition checks only true condtion
 let num=14
 
@@ -29,3 +30,17 @@ else if(numb<0){
 else{
     console.log(`${numb} Number is zero`);
 }
+*/
+
+
+// truthy operator
+const prompt=require('prompt-sync')({sigint:true})
+
+// truthy operator
+let num=prompt("Enter a number :")
+num>10 && console.log(`${num} greater than 10`)
+
+// Ternory Operator
+let age=prompt("Enter Your Age :")
+age>=18?console.log("Elgible for Voting"):console.log("Not Eligible for Voting");
+
