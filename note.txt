@@ -29,7 +29,7 @@ JAVASCRIPIT
 
     -Keywords: reserved words , eg: if , for , let . var etc 
 
-    -hositing: Hoisiting is a javascripit bahaviour where variables and function deceleration re move  to the top of their scope of during the compilation phase
+    -hositing: Hoisiting is a javascripit bahaviour where variables and function deceleration  move  to the top of their scope of during the compilation phase
 
     -scope: scope refers to where a variable can be accessed in code 
         >Global Scope: a variable declared outside any function or block is in the global scope. it can accesed from anywhere in the program.
