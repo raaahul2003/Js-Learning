@@ -44,5 +44,21 @@
 // console.log(isPrime? `${num} is Prime`:`${num} is Not Prime`);
 
 
+// for( let row=5; row<=0; row++){
+//     let pattern = ""
+//     for(let s=4; s>=row; s--){
+//      pattern+= " "
+
+//     }
+//     for(let col=1; col<=row; col++){
+//         pattern+= " * "
+        
+    
+// }  
+//     console.log(pattern);
+//     console.log();
+      
+// }
+
 
 
