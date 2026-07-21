@@ -121,3 +121,10 @@ JAVASCRIPIT
         age>=18?console.log("Elgible for Voting"):console.log("Not Eligible for Voting");
 
     loop:
+
+
+    Function: a function is a reausable block of code that perform a specific task. it runs only when it is called
+        syntax: 
+                function function_name( parameters ){
+                    code to be executed
+                }
