@@ -36,3 +36,8 @@ console.log("----------");
         console.log(i); 
         
     }    
+
+// to add an element in array
+weekDay[5] = "Saturday"
+weekDay.push("Sunday")
+console.log(weekDay);

@@ -191,6 +191,15 @@ JAVASCRIPIT
                 syntax:
                     variable_name = []
 
+                Array Methods: built-in methods to manipulate array elements
+                 syntax:
+                  array_name.method()
+                    - push(item) > to insert at end of an array
+                    - unshift(item) > used to insert data at the begining of an array
+                    - pop() > remove the last item in array
+                    - shift() > remove the first item in array
+                    - 
+
 
 
 
