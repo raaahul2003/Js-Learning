@@ -1,0 +1,141 @@
+JAVASCRIPT — QUICK STUDY NOTES
+===============================
+
+1. JavaScript
+JavaScript (JS) is a high-level programming language. It makes web pages interactive and dynamic—for example, responding to button clicks, validating forms, or updating content without reloading the page.
+
+2. Node.js
+Node.js is a runtime that lets JavaScript run outside a browser, such as on a computer/server or in a terminal. It includes useful built-in libraries and can use packages installed with npm.
+
+3. console.log()
+console.log() displays a value in the browser console or terminal. It is useful for checking what your code is doing.
+Example: console.log("Hello");
+
+4. Data types
+Data types describe the kind of value being stored.
+
+Primitive types (single/simple values):
+- Number: numeric values, such as 256 or 4.23.
+- String: text inside quotes, such as "Rahul".
+- Boolean: true or false.
+- Undefined: a variable exists but has not been given a value. Example: let x; // x is undefined
+- Null: an intentionally empty value. Example: let user = null;
+- BigInt: very large whole numbers. Write n at the end: 12345678901234567890n.
+- Symbol: a unique value, commonly used as a safe object key. Every Symbol is unique.
+
+Non-primitive types (complex/reference values):
+- Array: an ordered list of values. Example: ["red", "blue", "green"]
+- Object: related data stored as key-value pairs. Example: { name: "Rahul", age: 20 }
+
+5. Identifier
+An identifier is a name you create for a variable, function, class, and so on.
+Rules:
+- It may contain letters, digits, _ and $.
+- It cannot begin with a digit.
+- It cannot be a JavaScript keyword.
+- JavaScript is case-sensitive: age and Age are different identifiers.
+
+6. Keywords
+Keywords are reserved JavaScript words with a special meaning, so they cannot be used as identifiers. Examples: let, const, if, for, return, function.
+
+7. Hoisting
+Hoisting is JavaScript's behavior of processing declarations before code runs within their scope.
+- Function declarations can usually be called before their definition.
+- var is hoisted and initially has the value undefined.
+- let and const are also processed, but cannot be used before their declaration; that period is called the Temporal Dead Zone.
+
+8. Scope
+Scope means the part of the program where a variable can be used.
+- Global scope: declared outside functions/blocks; accessible widely.
+- Function scope: var declared inside a function is available only in that function.
+- Block scope: let and const declared inside { } are available only inside that block.
+
+9. Variables: var, let, and const
+Variables store data that may be used later.
+- var: function-scoped; can be redeclared and reassigned. Avoid it in modern code when possible.
+- let: block-scoped; cannot be redeclared in the same scope, but can be reassigned.
+- const: block-scoped; must receive a value when declared and cannot be reassigned.
+Example: const age = 20;
+Note: a const object/array cannot be reassigned, but its properties/items can still change.
+
+10. Joining values in output
+- Comma: console.log("Age:", age); (prints separate values)
+- Concatenation: "Age: " + age
+- Template literal: `Age: ${age}`. Use backticks and ${ } to insert a value.
+
+11. Operators
+- Assignment (=): gives a value. Example: x = 5
+- Arithmetic: + add, - subtract, * multiply, / divide, % remainder, ** power.
+- Comparison: <, <=, >, >=, !=, ==, ===. They return true or false.
+  Prefer === because it compares both value and type. Example: 5 === "5" is false.
+- Logical: && means AND, || means OR, ! means NOT.
+- Unary: ++ increases by 1; -- decreases by 1.
+- Shorthand assignment: +=, -=, *=, /= and %= combine an operation with assignment.
+  Example: x += 2 means x = x + 2.
+
+12. Conditional statements
+Conditionals choose which code runs based on true/false conditions.
+- if: runs code when a condition is true.
+- if...else: chooses between two paths.
+- else if ladder: checks multiple conditions in order.
+- switch: compares one value against several cases.
+
+13. Truthy and falsy / &&
+In a condition, JavaScript treats some values as false (falsy): false, 0, "", null, undefined, and NaN. Most other values are truthy.
+&& stops when its left side is falsy. It can conditionally run code:
+num > 10 && console.log(`${num} is greater than 10`);
+
+14. Ternary operator
+A short if...else expression.
+Syntax: condition ? valueIfTrue : valueIfFalse
+Example: age >= 18 ? "Eligible" : "Not eligible";
+
+15. Loops
+Loops repeat code.
+- for: use when you know how many times to repeat.
+- while: repeats while a condition remains true.
+- do...while: runs once first, then checks the condition.
+- for...of: loops through values in arrays/strings.
+
+16. Function
+A function is reusable code that performs a task. It runs when called.
+Example:
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, 3));
+
+17. Parameters, arguments, and return
+- Parameters are variable names in a function definition: a and b in function add(a, b).
+- Arguments are actual values passed during a call: 2 and 3 in add(2, 3).
+- return sends a result back to the place where the function was called. Without return, a function returns undefined.
+
+18. Types of functions
+- Function declaration: a named function written with function. It is hoisted.
+  function greet() { console.log("Hi"); }
+- Function expression: a function stored in a variable.
+  const greet = function () { console.log("Hi"); };
+- Arrow function: a shorter function syntax.
+  const add = (a, b) => a + b;
+- Callback function: a function passed to another function for that function to call.
+  Callbacks can be synchronous or asynchronous; they are not automatically asynchronous.
+- Anonymous function: a function without a name, often used as a callback.
+- Built-in function: a function JavaScript already provides, such as console.log(), Number(), Math.floor(), and setTimeout().
+- Nested function: a function defined inside another function.
+- Recursive function: a function that calls itself. It needs a stopping condition (base case).
+
+19. Synchronous and asynchronous code
+- Synchronous code runs one line at a time, in order.
+- Asynchronous code starts work that may finish later without blocking the rest of the program.
+  Example: setTimeout(() => console.log("Later"), 3000);
+
+20. Closure
+A closure happens when an inner function remembers and can use variables from its outer function, even after the outer function has finished.
+Example:
+function counter() {
+  let count = 0;
+  return function () { return ++count; };
+}
+const next = counter();
+next(); // 1
+next(); // 2

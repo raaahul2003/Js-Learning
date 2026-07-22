@@ -128,3 +128,71 @@ JAVASCRIPIT
                 function function_name( parameters ){
                     code to be executed
                 }
+
+               function is also a hoisted
+               parameters: 
+               arguments:
+               return:
+               callback:
+               synchronus:
+               Asynchronus:
+               anonymus function:
+               closure property:
+
+        Types of function
+            1. function deceleration( Named Function)
+                function is declared using the function keyword
+
+            2. Function Expression
+                function is assigned to a variable
+
+            3. Arrow Function
+                a shorter syntax for writing functions 
+                syntax: const variable_name=()=>{
+                    function body
+                }
+            
+            4.⁠ ⁠Callback Function
+                A function passed as an argument to another function. It is executed later.
+
+            5.⁠ ⁠Anonymous Function
+                A function without a name. It is often used as an argument to another function.
+
+            6.⁠ ⁠Pre-defined Functions (Built-in Functions)
+                These are functions that are already provided by JavaScript. We do not need to create them. We can use them directly.
+
+                Examples:
+                console.log()
+                Math.floor()
+                Number()
+            
+            7.⁠ ⁠Nested Function
+                A function that is defined inside another function. It can access the variables of its outer function and can only be called
+                from within the outer function.
+
+            >Closure Property:
+                Closure is the property by which a nested function can access and remember the variables of its outer function, even after the outer function has completed execution.
+
+            9. Recursive Function:
+                 is a function that calls itself within its body
+
+            20. Array:
+                an array is a data structure in js that allows us to store multiple values of any data type in a single variable.
+                * array is a object type
+                * index: postion numbe used to identify and access elements in an array
+                * accessing array element: array_name[index]
+                * Find total elements stored in an array use array_name.length
+                  
+                  Accesing array element:
+                    >using for loop
+                    >using for-of loop
+                    >using for-in loop
+
+                syntax:
+                    variable_name = []
+
+
+
+
+
+
