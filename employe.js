@@ -23,8 +23,6 @@ employee=[
 
 
 
-console.log("----------------------------------------");
-
 console.log("----Employee Names----");
 
 // for(let emp of employee){
@@ -48,7 +46,7 @@ console.log("----------------------------------------");
     employee.filter((emp)=>emp[2]=="Developer").forEach((emp)=>console.log(emp[1]))
     
 
-console.log("----------------------------------------");
+console.log("-----------------Laisha Details----------------------");
 
     // for(let emp of employee){
     //     if(emp[1]=="Laisha"){
@@ -59,10 +57,9 @@ console.log("----------------------------------------");
     console.log(employee.find(emp => emp[1]=="Laisha"));
     
 
-console.log("----------------------------------------");
+console.log("----------------Name - Salary---------------------");
 
     employee.sort((emp1,emp2)=>emp2[4]-emp1[4])
-    console.log(`Name - Salary`);
     console.log("--------------");
 
     for(let emp of employee){
@@ -70,15 +67,20 @@ console.log("----------------------------------------");
     
     }
 
-console.log("----------------------------------------");
+console.log("--------------Name - Experience--------------------------");
 employee.sort((emp1,emp2)=>emp1[5]-emp2[5])
-console.log(`Name - Experience`);
-console.log("--------------");
 for(let emp of employee){
     console.log(`${emp[1]} - ${emp[5]}`);
  
 }
-console.log("----------------------------------------");
+
+console.log("---------------Minimum Salary-------------------------");
+console.log(`${employee.reduce((emp1,emp2)=> emp1[4]<emp2[4]?emp1:emp2)[4]}`)
 
 
 
+console.log("---------------Maximum Salary-------------------------");
+console.log(`${employee.reduce((emp1,emp2)=> emp1[4]>emp2[4]?emp1:emp2)[4]}`);
+
+console.log("---------------Toatal Salary-------------------------");
+console.log(`${employee.reduce((sum,sal) => sal[4]+sum,0)}`);

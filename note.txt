@@ -203,7 +203,10 @@ JAVASCRIPIT
                             > index: the postion of current element
                             > array: the original array on which forEach() is called
                     - filter(callback) > it return a new array with elements that pass the condition. if no elements that pass the condition if no elements satisfies the condition, it return an empty array.
-                    - find
+                    - find(callback) > it returns the first element in an array that satisfiees a given condition. if no elemets satisfiees the condition it return undefined
+                    - map(callback) > map method creates a new array by applying a function to each element of the original array
+                    - reduce() > method reduces all the elements of an array to a single value by  executing c callback function on each element.
+                        syntax: array_name.reduce((accumulator,currentvalue,index,array)=> statements, initial_value)
 
     Algoritm:
         
