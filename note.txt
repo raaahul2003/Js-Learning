@@ -198,7 +198,15 @@ JAVASCRIPIT
                     - unshift(item) > used to insert data at the begining of an array
                     - pop() > remove the last item in array
                     - shift() > remove the first item in array
-                    - 
+                    - foreach((value,index,array) => statements); alternate of for-of loop. it is used to execute a function once for each element in an array . it does not return a new array
+                            > value: the current array element
+                            > index: the postion of current element
+                            > array: the original array on which forEach() is called
+                    - filter(callback) > it return a new array with elements that pass the condition. if no elements that pass the condition if no elements satisfies the condition, it return an empty array.
+                    - find
+
+    Algoritm:
+        
 
 
 
