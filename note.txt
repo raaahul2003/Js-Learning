@@ -265,6 +265,12 @@ JAVASCRIPIT
                     -bracket notation
                             >synatx: object_name['']
 
+                object methods:
+                    - Object.value(object_name):  return an array of all property names(keys)
+
+                    -bject.keys(object_name:) return an array containing all the values in that particular object
+
+
 
 
 
