@@ -268,7 +268,12 @@ JAVASCRIPIT
                 object methods:
                     - Object.value(object_name):  return an array of all property names(keys)
 
-                    -bject.keys(object_name:) return an array containing all the values in that particular object
+                    - Object.keys(object_name:) return an array containing all the values in that particular object
+
+                    -Object.assign(): copies properties from one or more object into another object 
+                        synatx: Object.assign(target,source1,source2..)
+                    
+                        
 
 
 
