@@ -207,9 +207,69 @@ JAVASCRIPIT
                     - map(callback) > map method creates a new array by applying a function to each element of the original array
                     - reduce() > method reduces all the elements of an array to a single value by  executing c callback function on each element.
                         syntax: array_name.reduce((accumulator,currentvalue,index,array)=> statements, initial_value)
+                    - some(callback) > return/false based on a condition applied to all items in given array
+                    - flat(depth) > return array with corresponding depth as dimension
+                    - includes(key) > return boolean based on the key present in the array or not.
+                    - indexOf(element) > return index value corresponding to the item
+                    - splice() > used to add , remove or replace elements in an array. it changes the original array.
+                            - start:index where the operation starts
+                            - delete_count: number of elements to remove
+                            - item1, item2: elementsto add(optional)
+                    -join(seperator) - to join array elements to string
 
-    Algoritm:
-        
+            - String: Content that put in " " or ' ' 
+                    
+                >toFind length of a string use str.length
+                String Methods
+                --------------
+                > substring() : used to extract a part of a string and return it as a new string,
+                    syntax string.substring(start,index,endindex)
+                        startindex: the position where extraction starts(inclusive)
+                        endindex: the postion where extraction stops(exclusive)
+
+                > startsWith(): check whether a string starts with a specified sequence of character. return true if the string starts with the specified text,otherwise false.default-index value willl be zero
+
+                > endsWith(): check whether a string ends with a specified sequence of character. return true if the string starts with the specified text,otherwise false.
+
+                > toUppercase(): convert all characters to upper case.
+
+                > toLowercase(): convert all characters to lower case.
+
+                > trim(): to remove whitespaces on both ends on a string.
+
+                > includes(): to find a substring on a string with return boolean response
+                            syntax; string.includes(searchString,position)
+                
+                > split():mused to split a string into an array based on a specified seperator.
+                            synatx: string.split(sperator,limit)
+                        - seperator: the character(s) where the string should b split.
+                        - limit(optional): maximum number of elements to return  
+
+                > slice(): used to extract a part of a string and return it as a new string,
+                    syntax string.substring(start,index,endindex)
+                        startindex: the position where extraction starts(inclusive)
+                        endindex: the postion where extraction stops(exclusive)
+                        - negative index also supported , negative index that start from end -1..
+
+            - Object: is a collection of key-values pairs used to store related data and functonality together.
+                functonality together.
+                 
+                 -let object_name = {
+                    key1: value1,
+                    key2;value2 ..
+                 }
+
+                 -accesing values from an object 
+                    -dot notation
+                            >syntax: object_name.
+                    -bracket notation
+                            >synatx: object_name['']
+
+
+
+
+
+    
 
 
 

@@ -40,12 +40,13 @@ covid_data.sort((a,b) => b[2]- a[2]).forEach(c => console.log(c[1],c[2]));
 // 5. is district with +ve case>15000
 console.log("");
 console.log("District with +ve case>15000");
-covid_data.filter(a => a[2]>15000).forEach(b => console.log(b[1],b[2]));
+console.log(covid_data.some(a => a[2]>15000)?`Yes`:`No`);
+
 
 // 6. display district  with 1st dose vaccine in ascending order
 console.log("");
 console.log("District  with 1st dose vaccine in ascending order");
-covid_data.sort((a,b) => a[3]- b[3]).forEach(c => console.log(c[1],c[3]));
+covid_data.sort((a,b) => a[5]- b[5]).forEach(c => console.log(c[1],c[5]));
 
 // 7. print trissur details
 console.log("");
@@ -61,4 +62,6 @@ console.log(`Total Curred case: ${covid_data.reduce((sum,ve) => sum+ve[4],0)}`);
 
 // 10. print curred case in idukki
 console.log("");
-covid_data.filter(c => c[1]=='idukki').forEach( d=> console.log(`District: ${d[1]}, Curred Rate: ${d[4]}`));
+// covid_data.filter(c => c[1]=='idukki').forEach( d=> console.log(`District: ${d[1]}, Curred Rate: ${d[4]}`));
+console.log(covid_data.find(c => c[1]=='idukki')[4]);
+
