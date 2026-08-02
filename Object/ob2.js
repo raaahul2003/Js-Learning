@@ -27,7 +27,4 @@ let weather = {}
             weather[district] = curtemp 
         }
     })
-
-    
-
     console.log(weather);

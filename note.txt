@@ -176,7 +176,7 @@ JAVASCRIPIT
             9. Recursive Function:
                  is a function that calls itself within its body
 
-            20. Array:
+            10. Array:
                 an array is a data structure in js that allows us to store multiple values of any data type in a single variable.
                 * array is a object type
                 * index: postion numbe used to identify and access elements in an array
@@ -272,7 +272,19 @@ JAVASCRIPIT
 
                     -Object.assign(): copies properties from one or more object into another object 
                         synatx: Object.assign(target,source1,source2..)
-                    
+
+    OOP(object oriented programming) 
+    --------------------------------
+    it is a programming style where we organize code using objects instead of just functions and variables.
+
+    object: instance of a class (real usable entity)
+    class : is a blue print (template) used to create object
+    constructor: Special method in class that is automatically called when an object is created.
+    this keyword: refer to the current object 
+
+    object creation: const object_name = new class_name()
+    
+
                         
 
 

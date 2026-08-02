@@ -1,0 +1,122 @@
+
+Questions:
+
+1. find first reccurssive character from the given pattern 
+   pattern="ABEBAAD"
+2. Display number count 
+   arr=[10,20,0,40,20,30,50,30,20,10,60,70,40,50,60,70,80,20]
+3. accounts=[
+    {
+        acno:1000,ac_type:'savings',balance:45000,transaction:[
+            {
+                to:1001,amount:5000,msg:'ebill',mode:'gpay'
+            },
+            {
+                to:1002,amount:2000,msg:'emi',mode:'neft'
+            },
+            {
+                to:1003,amount:1000,msg:'recharge',mode:'phonePay'
+            },
+        ]
+   
+     },
+     {
+        acno:1001,ac_type:'current',balance:30000,transaction:[
+            {
+                to:1000,amount:1000,msg:'grossary',mode:'gpay'
+            },
+            {
+                to:1002,amount:7000,msg:'gift',mode:'phonePay'
+            },
+            {
+                to:1003,amount:10000,msg:'emi',mode:'neft'
+            },
+        ]
+   
+     },
+     {
+        acno:1002,ac_type:'fixed',balance:100000,transaction:[
+            {
+                to:1000,amount:5000,msg:'ebill',mode:'gpay'
+            },
+            {
+                to:1001,amount:2000,msg:'emi',mode:'neft'
+            },
+            {
+                to:1003,amount:1000,msg:'recharge',mode:'phonePay'
+            },
+        ]
+   
+     },
+     {
+        acno:1003,ac_type:'savings',balance:30000,transaction:[
+            {
+                to:1001,amount:5000,msg:'ebill',mode:'gpay'
+            },
+            {
+                to:1002,amount:2000,msg:'emi',mode:'n ef'
+            },
+            {
+                to:1000,amount:1000,msg:'recharge',mode:'phonePay'
+            },
+        ]}]
+
+          1.print total number of accounts
+          2.print acount number whose account type is savings
+          3.print balance of account number 1000
+          4.print all gpay transactions
+          5.print all transactions whose amount>5000
+          6.print credit transaction of account 1002
+          7.print total credit amount to the account 1002
+          8.print debit transaction of account 1002
+          9.print total debit amount from the account 1002
+          10.print transaction history of 1002
+          11.current balance of 1002
+          12.print highest  balance account details
+
+4. Raju's Instagram Giveaway! Win an iPhone!
+     Raju is hosting a giveaway on the instagram to give awaya brand nw iPhone!
+     To select the winner, he needs help identifying the first unique commenter
+     on his giveaway post - the first user who commented only once without repeating.
+     The challenge: 
+	Given a list of Instagram usernames representing the order of comments,
+        write a function that returns the username of the first commenter who didn't
+        comment again. If every user commented multiple times, the function should
+        return "No unique commenter".
+        Examples:
+        comments1 = ['nisha', "arjun', 'nisha', 'vicky', 'arjun', 'meera']
+        Output: "vicky"
+        comments2 = ['alex', "alex','sam', 'sam' ]
+        Output: "No unique commenter"
+
+5. Ramu's Card Stack Game!
+
+      Ramu is playing a card game where he places cards on top of a pile and 
+      sometimes removes the top card.
+      You are given a list of moves:
+        • "place ‹card›" means Ramu places a card (like "Ace", "King", "Queen") on 
+           top of the pile.
+        • "remove" means Ramu removes the top card from the pile.
+        • If the pile is empty and a "remove" move happens, ignore it.
+      Your task:
+        After all moves, return the name of the card currently on top of the pile.
+        If the pile is empty, return "No cards left".
+           Examples:
+             moves1 = ["pLace Ace", "place King", "remove", "place Queen"]
+             Pile flow: ["Ace"] -> ["Ace", "King"] -> remove top ("King") -> ["Ace","Queen"]
+             Output: "Queen"
+            
+             moves2 = ["remove","place Jack", "remove", "remove"]
+             Pile flow: [] -> ["Jack"] -> remove top ("Jack") -> remove ignored (empty)
+             Output:"No cards left"
+
+6. Remove duplicates from a number array using reduce() function.
+
+7. Convert [apple,orange,apple,banana,orange] to {apple:2,orange:2,banana:2 } using reduce
+
+8. Write a fuction that return the numer of times its called using closure
+
+     Eg:
+     counter(); // 1
+     counter(); // 2
+     counter(); // 3
