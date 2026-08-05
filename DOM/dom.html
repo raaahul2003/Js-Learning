@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>CSS</h1>
+    <ul>
+        <li>Internal</li>
+        <li>External</li>
+    </ul>
+    <button id="btn">Click here</button>
+    <div id="parent">
+        <button id="child">click</button>
+    </div>
+</body>
+<script>
+    let p = document.createElement('p')
+    p.innerHTML = "<b>Learning javascripit</b>"
+    document.body.append(p)
+
+    document.getElementById('btn').addEventListener('click',(e)=>{
+        alert("Button Clicked")
+        console.log(e);
+        
+    })
+    document.getElementById('parent').addEventListener('click',()=>{
+        console.log("clicked on parent ");
+        
+    })
+
+    document.getElementById('child').addEventListener('click',(e)=>{
+        console.log("clicked on child ");
+        e.stopPropagation()
+        
+    })
+    
+    
+    
+
+</script>
+</html>

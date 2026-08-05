@@ -275,14 +275,97 @@ JAVASCRIPIT
 
     OOP(object oriented programming) 
     --------------------------------
-    it is a programming style where we organize code using objects instead of just functions and variables.
+        it is a programming style where we organize code using objects instead of just functions and variables.
 
-    object: instance of a class (real usable entity)
-    class : is a blue print (template) used to create object
-    constructor: Special method in class that is automatically called when an object is created.
-    this keyword: refer to the current object 
+        object: instance of a class (real usable entity)
+        class : is a blue print (template) used to create object
+        constructor: Special method in class that is automatically called when an object is created.
+        this keyword: refer to the current object 
 
     object creation: const object_name = new class_name()
+
+    OOP Feature
+    ------------
+
+        INHERITANCE: Acquiring properties and methods of one class to another class
+            classical inheritance : inheritance between classes 
+            prototype inheritance : inheritance between object
+
+        POLYMORPHISM: means "many forms" the same function or method behaves differently based on the context,input or object
+
+        ENCAPSULATION: binding data(variable) and methods(function) together into a single unit and restricting direct access to some data
+
+        ABSTRACTION: hiding implementation details and showing only the necessary structure to the user.
+
+    javascripit - front-end concepts
+    --------------------------------
+        ways to apply js in html programr
+            -internal js: use <scripit> tag to provide js code in html
+            -external js: link external js file with html using <scripit> tag
+
+        DOM(Document Object Model) - it is a progrzmming interface that represent a html document as a tree of objects so that can access and modify the webpage
+
+        DOM Methods:
+        ------------
+        1. Selecting html Elements
+
+            > document.getElementsByTagName('tag_name'): select all with that tag_name
+
+            > document.getElementById('id_name'): select with that id_name
+
+            > document.getElementsByClassName('class_name'): select all with that class_name
+
+            > document.querySelector('tag_name/#id/.class'): select the first matching elemnt using the css selector
+
+            > document.querySelectorAll('tag_name/#id/.class'): select the all matching elemnt using the css selector
+
+        2. Changing Content
+
+            >innerHTML: get or change html content
+            
+            >innerText: get or change only visible text
+        
+        3. Creating Element
+
+            document.createElement('tag_name)
+
+        4. Adding Element
+
+            parent.append(child): add at end
+            parent.preappend(child): add before its existing child
+
+        5. Remove Element
+
+            element.remove('tag_name')
+            parent.remove('child')
+
+        6. Attribute Methods
+
+            getAttribute()-
+                           img.getAttribute('src')
+            setAttribute()-
+                            img.setAttribute('src','image.png')
+            removeAttribute('attribute)-
+                            to remove an attribute
+
+        7. Event Binding
+
+            addEventListener('event_name',action)
+    Event: an event in js is any action or occurannce in browser such as mouse click ,key press, or pageload , that js can detct and respond to by executing a function.
+        >event object: when an event occur , js creates an event object that contains information of the event 
+        
+        >event propagation: is the mechanishm by which an event travels through the DOM tree. it has three phase
+            1. Capturing(top to bottom)
+            2. target(the clicked element )
+            3. bubling(bottom to top)
+
+
+
+
+
+
+    -Web Storage: store data only for current browser tab. the browser deletes the data as soon as you close a specific tab or window.
+     -Local storage: store 
     
 
                         

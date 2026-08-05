@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div id="bg" style="height: 100vh; display: flex; justify-content: center; align-items: center;" class="flex-column"> 
+        <h1 class="text-center text-danger">Voting Eligibility Checking</h1>
+        <div class="my-5 d-flex justify-content-center align-items-center">
+            <input type="text" id="inputAge" placeholder="Enter Your Age" class="form-control">
+            <button class="btn btn-primary ms-5" onclick="checkVote()">Check</button>
+        </div>
+        <div id="output">
+
+        </div>
+    </div>
+</body>
+<script>
+    const checkVote=()=>{
+        let age = document.getElementById('inputAge').value
+        let output = document.getElementById('output')
+
+        if(age>=18){
+            output.style.color = "green"
+            output.innerHTML = 'Eligible For Voting'
+        }else{
+            output.style.color = "red"
+            output.innerHTML = 'Not Eligible For Voting'
+        }
+    }
+</script>
+</html>

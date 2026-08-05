@@ -3,8 +3,10 @@ Questions:
 
 1. find first reccurssive character from the given pattern 
    pattern="ABEBAAD"
+
 2. Display number count 
    arr=[10,20,0,40,20,30,50,30,20,10,60,70,40,50,60,70,80,20]
+   
 3. accounts=[
     {
         acno:1000,ac_type:'savings',balance:45000,transaction:[
@@ -112,7 +114,7 @@ Questions:
 
 6. Remove duplicates from a number array using reduce() function.
 
-7. Convert [apple,orange,apple,banana,orange] to {apple:2,orange:2,banana:2 } using reduce
+
 
 8. Write a fuction that return the numer of times its called using closure
 

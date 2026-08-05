@@ -67,6 +67,9 @@ const accHolder = new Bank()
 
 // 2
 // accHolder.authenticateAcc(1000,"userone")
+
+// 3
 // accHolder.balanceAcc(101)
 
+// 4
 accHolder.fundTransfer(1000,1003,2000)
