@@ -8,8 +8,27 @@
 </head>
 <body>
     <div id="main" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;" class="flex-column">
+        <h1 class="text-center text-danger">Note</h1>
+        <div class="my-5 d-flex align-items-center justify-content-center">
+        <input type="text" id="inputData" placeholder="Enter the note " class="form-control">
+        <button class="btn btn-danger ms-5" onclick="add()">Add</button>
+        </div>
+        
+        <h4 class="text-success fw-bold">Added Note:</h4>
+        <ol id="output">
 
+        </ol>
+    
+       
     </div>
 
 </body>
+<script>
+    const add=()=>{
+        let note = document.getElementById('inputData').value
+        document.getElementById('inputData').value = ""
+        let output = document.getElementById('output')
+        output.innerHTML += `<li>${note}</li>`
+    }
+</script>
 </html>

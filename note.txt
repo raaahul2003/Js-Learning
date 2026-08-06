@@ -359,16 +359,60 @@ JAVASCRIPIT
             2. target(the clicked element )
             3. bubling(bottom to top)
 
-
-
-
-
-
     -Web Storage: store data only for current browser tab. the browser deletes the data as soon as you close a specific tab or window.
-     -Local storage: store 
-    
+        -Local storage: store 
 
-                        
+
+    -API(Application programming interface): is a set of rules that allows two software Application to communicate 
+
+    -URL(Uniform Resource Locator): is thr address of a resources on the internet
+
+    -API Architecture: is the blue print that defines how an api is designed , organised  and how client , servers and database communicate with each other.
+        -REST(Representational State Transfer) API:
+                - most commonly used 
+                - use Http methods like GET, POST, PUT, DELETE
+                - data usually exchange as JSON
+        -SOAP(Simple Object Access Protocol) API:
+                - use XML only
+                - strict rules and standards
+                - used in banking, healthcare and enterprise Application
+        -GraphQl:
+                -is a query language and API Architecture developed by meta, that allow client to request exactly the data they need.
+    
+    -JSON(JAVASCRIPIT Object Notation): is a data format used to store and exchange data  between a client and server.It is commonly used in APIs because it is easy for human to read and easy for amchine to process.
+
+    -HTTP METHODs:
+        -GET: to get data from the server
+        -POST: to store data
+        -PUT: to update data
+        -DELETE: to delete data
+
+    -HTTP STATUS CODE:
+        -1XX : information response
+        -2XX : Sucess
+        -3XX : Redirection
+        -4XX : client error
+        -5XX : server error
+                                                                              ________________
+             ______                                                         |    |     |     | Microtask Queue
+            |______|                            _______________          /==>|____|_____|_____|   
+            |______|                           |               |        /    
+            |______|  <===  (event Loop) <===> |    webAPI     |======
+            |______|                           |_______________|        \      ________________
+            |______|                                                      \==>|    |     |     | callback Queue
+            |______|                                                          |____|_____|_____|
+            callStack
+            
+    -callStack: the call stack is a memory structure used by js to keep track of which function is currently running. it follow LIFO(Last In First Out).only one function executes at a time beacuse javascripit is single-threaded
+
+    -webAPI: 
+
+    -Different ways to do API call in js
+        -using XMLHttpRequest     
+         1.  // create object for class XMLHttpRequest
+         2.  // create req configuration
+         3.  // send request 
+         4.     
 
 
 
