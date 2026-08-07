@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody id="output">
-                <
+                
             </tbody>
         </table>
     </div>
@@ -44,17 +44,20 @@
                 let users = JSON.parse(api.responseText)
                 console.log(users);
                 
-                users.forEach(users =>{
-                    output.innerHTML = `
+                users.forEach((users,index) =>{
+                    output.innerHTML += `
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>${index+1}</td>
+                    <td>${users.name}</td>
+                    <td>${users.email}</td>
+                    <td>${users.phone}</td>
                 </tr>`
                 })
             }
 
+        }else{
+            console.log("Failed to fetch data");
+            
         }
         
     }

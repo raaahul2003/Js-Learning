@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <div style="min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: black;" class="flex-column">
+
+            <h1 class="text-warning fw-bold">QUOTES OF TODAY</h1>
+            <button id="check" class="btn btn-success fw-bold mt-3 " onclick="check()">Show</button>
+
+        <div id="quote">
+
+        </div>
+        
+    </div>
+ 
+</body>
+<script>
+ const check = ()=>{
+
+    fetch('https://dummyjson.com/quotes').then(value =>{
+    
+        value.json().then(data => {
+        
+            let quotes = data.quotes
+            console.log(quotes);
+
+            let random = Math.floor(Math.random()*quotes.length)
+            console.log(random);
+
+            let displayQuote = quotes[random]
+            console.log(displayQuote);
+
+            console.log(displayQuote.quote);
+
+            let displayQuotes = displayQuote.quote
+            let author = displayQuote.author
+            
+            let output = document.getElementById('quote')
+            output.innerHTML = `<div class = "border border-warning rounded p-4  mt-4 text-light text-center"> ${displayQuotes} <br> ~ ${author}
+                </div>`
+      
+    })
+    })
+    
+ }
+
+</script>
+</html>

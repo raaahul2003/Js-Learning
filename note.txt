@@ -412,7 +412,19 @@ JAVASCRIPIT
          1.  // create object for class XMLHttpRequest
          2.  // create req configuration
          3.  // send request 
-         4.     
+
+    -callback hell: it is a situation in js where multiple asynchronius operations depend on each other,causing callbacks to be nested inside callbacks. this make the code difficult to read. understand and maintain. it is also called  "pyramid of dom"
+
+    -promise: a promise in js is am object that represents the eventaual completeion (or failure) of an Asynchronus operation and its resulting value that may be available now, later or never (if an error occurs).
+        -promise has 3state
+            -pending                :the operation is still in progress
+            -resolved(fulfilled)    :the operation completed successfully
+            -rejected               :the operation failed
+
+        -then(); A promise method that runs when the promise is fulfilled. It recieves the resolved data
+
+        -catch(): A promise method that runs where the promise is rejected or an error occurs. it recieves an error.
+        
 
 
 
